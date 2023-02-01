@@ -1,0 +1,17 @@
+
+Gereksiz olarak Virtual DOM'da güncellemelere sebebiyet verip performansı düşüren sebepler.
+
+1.useEffect kullanırıken aşağıdaki kullanım performans sorunlarına neden olur.
+
+useEffect(() => {}) // deps [] yok
+
+2.map ile bir listeyi itere ederken  key alanlarına unuqiue değerler (api dan gelen id) değerleri ile tanımlamaya özen gösterelim. Array Index tanımı gereksiz renderlara sebebiyet verebilir.
+
+
+3. UseMemo, React.Memo, UseCallback Memoization Kavramını kullanmak performans konusunda re-render süreçlerini ortadan kaldırır (Apidan serach,cal işlemlerinde debounce ile 300 ms de bir apicall ile birlikte UseMemo kullanımı yapmaya özen gösterelim.)
+
+
+
+
+
+
