@@ -10,14 +10,14 @@ type TodoProps = {
 export const Todo = (
   { items }: TodoProps // parent component
 ) => {
-  // let interval1 = setInterval(() => {
-  //   console.log("deneme");
-  // }, 100);
+  let interval1 = setInterval(() => {
+    console.log("deneme");
+  }, 100);
 
   useEffect(() => {
     return () => {
       console.log("dom destroy");
-      // clearInterval(interval1);
+      clearInterval(interval1);
     };
   }, []);
 
