@@ -3,13 +3,15 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { Memoization } from "./Memoization";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   // <React.StrictMode>
-  <App />
+  // <App /> // 1. uygulama
+  <Memoization /> //2.uygulama
   // </React.StrictMode>
 );
 
