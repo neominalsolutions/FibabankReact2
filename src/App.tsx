@@ -50,6 +50,16 @@ function App() {
     return () => {};
   }, []); // tek sefer sayfa açıldığında çalışsın
 
+  // const res = () => {
+  //   // this // windows
+  // }
+
+  // function res2() {
+  //   // this self kendi context
+  // }
+
+  // res(){}
+
   return (
     <div className="App">
       <Todo items={[]} />
